@@ -6,6 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     background: #080808;
@@ -71,7 +72,7 @@ nav ul li a:hover::after{
     color: #05aa05;
 }
 
-/*-----------About--------------*/
+/*---------------------------------------------About----------------------------------------*/
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -140,7 +141,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/*---------------------services------------------*/
+/*-----------------------------------------------services------------------------------------------*/
 #services {
     padding: 30px 0;
 }
@@ -180,7 +181,7 @@ nav ul li a:hover::after{
     background: #05aa05;
     transform: translateY(-10px);
 }
-/*--------------Portfolio-------------*/
+/*------------------------------------------Portfolio--------------------------------------*/
 #portfolio{
     padding: 50px 0;
 }
@@ -256,7 +257,115 @@ nav ul li a:hover::after{
     background: #05aa05;
 }
 
-/*----------------------------Contact-----------------------------*/
+/* ICONS */
+.icon {
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .about-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-icon {
+    cursor: pointer;
+    font-size: 50px;
+    color: rgb(26, 43, 2);
+  }
+  
+  .card {
+    background: #05aa05;
+    width: 50%;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .card h1 {
+    color: rgb(23, 38, 1);
+  }
+  
+  .card-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card-item {
+    background: #61b752;
+    width: 100%;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .card-item h2 {
+    font-size: 100%;
+  }
+  
+  .card-item h5 {
+    font-size: 100%;
+  }
+  
+  .card-item p {
+    color: rgb(190, 192, 186);
+  }
+
+  /*--------------------------------My Tech Stack------------------------------ */
+  .exp-card {
+    padding: 50px 30px;
+    margin-top: 30px;
+  }
+
+  #card-1{
+    flex-basis: 48%;
+  }
+  #card-2{
+    flex-basis: 48%;
+  }
+  
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  
+  article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  article .txt h3 {
+    color: white;
+  }
+  
+  article .txt p {
+    color: rgb(20, 31, 4);
+  }
+  
+  article .icon {
+    cursor: pointer;
+    height: 4rem;
+  }
+  
+  
+
+/*------------------------------------------Contact---------------------------------------*/
 .contact-left{
     flex-basis: 35%;
 }
@@ -376,6 +485,9 @@ nav .fas{
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+    }
+    .card{
+        width: 100%;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
